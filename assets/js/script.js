@@ -182,5 +182,6 @@ var taskStatusChangeHandler = function (event) {
     };
 };
 
+
 pageContentEl = document.querySelector('#page-content');
 pageContentEl.addEventListener("change", taskStatusChangeHandler);
