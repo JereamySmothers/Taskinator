@@ -191,6 +191,10 @@ var deleteTask = function (taskId) {
     tasks = updatedTaskArr;
 };
 
+var saveTasks = function() {
+    localStorage.setItem('tasks', tasks)
+}
+
 var taskStatusChangeHandler = function (event) {
     // get the task item's id
     var taskId = event.target.getAttribute("data-task-id");
